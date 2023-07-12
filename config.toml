@@ -1,0 +1,61 @@
+
+baseURL = "https://rahimli.net/"
+languageCode = "en"
+defaultContentLanguage = "en"
+
+title = "Jeyhun Rahimli"
+# copyright = "Copy, _right?_ :thinking_face:"
+
+enableEmoji = true
+disableKinds = ["taxonomy", "term"]
+
+[author]
+name = "Jeyhun Rahimli"
+headline = "Hey 👋, I'm Jeyhun Rahimli and I am a passionate Software Engineer and coffee lover with experience in developing both frontend and backend systems. I am mainly interested in backend side of things, cloud computing, microservices, and of course, coffee."
+image = "img/jeyhun_rahimli.jpg"                                                                                                                                                                                                                                          # path relative to static directory
+
+links = [
+    { email = "mailto:rahimlijeyhun77@gmail.com" },
+    # { link = "https://link-to-some-website.com/" },
+    # { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
+    # { apple = "https://www.apple.com" },
+    # { codepen = "https://codepen.io/username" },
+    # { dev = "https://dev.to/username" },
+    # { discord = "https://discord.gg/invitecode" },
+    # { dribbble = "https://dribbble.com/username" },
+    # { facebook = "https://facebook.com/username" },
+    # { flickr = "https://www.flickr.com/photos/username/" },
+    # { foursquare = "https://foursquare.com/username" },
+    { github = "https://github.com/jeyhunr" },
+    # { gitlab = "https://gitlab.com/username" },
+    # { google = "https://www.google.com/" },
+    { instagram = "https://instagram.com/rahimlijeyhun" },
+    # { keybase = "https://keybase.io/username" },
+    # { kickstarter = "https://www.kickstarter.com/profile/username" },
+    # { lastfm = "https://lastfm.com/user/username" },
+    { linkedin = "https://linkedin.com/in/jeyhun-rahimli" },
+    # { mastodon = "https://mastodon.instance/@username" },
+    { medium = "https://medium.com/@jeyhunr" },
+    # { microsoft = "https://www.microsoft.com/" },
+    # { patreon = "https://www.patreon.com/username" },
+    # { pinterest = "https://pinterest.com/username" },
+    # { reddit = "https://reddit.com/user/username" },
+    # { slack = "https://workspace.url/team/userid" },
+    # { snapchat = "https://snapchat.com/add/username" },
+    # { soundcloud = "https://soundcloud.com/username" },
+    # { stack-exchange = "https://stackexchange.com/users/userid/username" },
+    # { stack-overflow = "https://stackoverflow.com/users/userid/username" },
+    # { steam = "https://steamcommunity.com/profiles/userid" },
+    # { telegram = "https://t.me/username" },
+    # { tiktok = "https://tiktok.com/@username" },
+    # { tumblr = "https://username.tumblr.com" },
+    # { twitch = "https://twitch.tv/username" },
+    { twitter = "https://twitter.com/rahimlijeyhun" },
+    # { whatsapp = "https://wa.me/phone-number" },
+    # { youtube = "https://youtube.com/username" },
+]
+
+[module]
+[module.hugoVersion]
+extended = false
+min = "0.86.1"
