@@ -10,6 +10,7 @@ import { RouterLink } from "@angular/router";
   styleUrls: ["./home.component.scss"],
 })
 export class HomeComponent {
+  currentYear = new Date().getFullYear();
   codeExampes = `
   function bubbleSort<T>(array: T[]): T[] {
   const n = array.length;
