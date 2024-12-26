@@ -1,0 +1,54 @@
+<div class="container mx-auto px-4 py-16 relative">
+  <!-- Header -->
+  <div class="mb-12">
+    <h1 class="text-4xl font-bold text-gray-100 mb-4">Blog Posts</h1>
+    <p class="text-gray-400">
+      Thoughts, tutorials, and insights about software development
+    </p>
+  </div>
+
+  <!-- Blog List -->
+  <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <article
+      *ngFor="let blog of blogs"
+      class="bg-gray-800/50 rounded-lg overflow-hidden hover:bg-gray-800/70 transition-colors duration-300"
+    >
+      <a [routerLink]="['/blog', blog.id]" class="block p-6">
+        <div class="flex items-center gap-4 mb-4 text-sm text-gray-400">
+          <time>{{ blog.date | date }}</time>
+          <span>·</span>
+          <span>{{ blog.readTime }}</span>
+        </div>
+        <h2 class="text-xl font-bold text-gray-100 mb-2">
+          {{ blog.title }}
+        </h2>
+        <p class="text-gray-400 mb-4">
+          {{ blog.description }}
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span
+            *ngFor="let tag of blog.tags"
+            class="px-3 py-1 text-sm bg-accent-green/10 text-accent-green rounded-full"
+          >
+            {{ tag }}
+          </span>
+        </div>
+      </a>
+    </article>
+  </div>
+
+  <!-- Code Background Effect -->
+  <div
+    class="absolute top-0 right-0 w-1/2 h-full opacity-5 pointer-events-none overflow-hidden"
+  >
+    <div class="relative w-full h-full">
+      <div
+        class="absolute transform -rotate-12 bg-gradient-to-br from-accent-green/20 to-transparent p-8 rounded-lg"
+      >
+        <pre class="text-xs text-gray-400">
+          <code>{{codeExampes}}</code>
+        </pre>
+      </div>
+    </div>
+  </div>
+</div>

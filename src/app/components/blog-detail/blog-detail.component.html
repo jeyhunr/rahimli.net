@@ -1,0 +1,43 @@
+<div class="container mx-auto px-4 py-16 relative" *ngIf="blog">
+  <!-- Header -->
+  <article class="max-w-3xl mx-auto">
+    <header class="mb-8">
+      <div class="flex items-center gap-4 mb-4 text-sm text-gray-400">
+        <time>{{ blog.date | date }}</time>
+        <span>·</span>
+        <span>{{ blog.readTime }}</span>
+      </div>
+      <h1 class="text-4xl font-bold text-gray-100 mb-4">
+        {{ blog.title }}
+      </h1>
+      <div class="flex flex-wrap gap-2">
+        <span
+          *ngFor="let tag of blog.tags"
+          class="px-3 py-1 text-sm bg-accent-green/10 text-accent-green rounded-full"
+        >
+          {{ tag }}
+        </span>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div class="prose prose-invert prose-green max-w-none">
+      {{ blog.content }}
+    </div>
+  </article>
+
+  <!-- Code Background Effect -->
+  <div
+    class="absolute top-0 right-0 w-1/2 h-full opacity-5 pointer-events-none overflow-hidden"
+  >
+    <div class="relative w-full h-full">
+      <div
+        class="absolute transform -rotate-12 bg-gradient-to-br from-accent-green/20 to-transparent p-8 rounded-lg"
+      >
+        <pre class="text-xs text-gray-400">
+          <code>{{codeExampes}}</code>
+        </pre>
+      </div>
+    </div>
+  </div>
+</div>

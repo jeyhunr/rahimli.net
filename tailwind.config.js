@@ -6,7 +6,7 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                'accent-green': '#4ade80',
+                'accent-green': '#64ffda',
                 gray: {
                     900: '#111827',
                     800: '#1f2937',
@@ -30,5 +30,5 @@ module.exports = {
             }
         },
     },
-    plugins: [],
+    plugins: [require("@tailwindcss/typography")],
 } 
