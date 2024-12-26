@@ -1,0 +1,18 @@
+import { Component } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { RouterLink } from "@angular/router";
+
+@Component({
+  selector: "app-home",
+  standalone: true,
+  imports: [CommonModule, RouterLink],
+  templateUrl: "./home.component.html",
+  styles: [
+    `
+      .social-link {
+        @apply text-gray-400 hover:text-accent-green transition-colors duration-200;
+      }
+    `,
+  ],
+})
+export class HomeComponent {}

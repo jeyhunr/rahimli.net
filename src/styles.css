@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-900 text-gray-100;
+  }
+}
+
+@layer components {
+  .social-link {
+    @apply text-gray-400 hover:text-accent-green transition-colors duration-200;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-glow {
+    background: radial-gradient(
+      circle at top right,
+      rgba(74, 222, 128, 0.1),
+      transparent 50%
+    );
+  }
+}
