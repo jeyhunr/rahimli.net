@@ -1,0 +1,4 @@
+// No custom CSS needed since we'll use Tailwind classes
+.social-link {
+  @apply text-gray-400 hover:text-accent-green transition-colors duration-200;
+}
