@@ -1,2 +1,5 @@
+dist
+# Node
 node_modules
 .angular
+.firebase
