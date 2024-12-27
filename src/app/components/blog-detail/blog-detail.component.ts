@@ -1,13 +1,13 @@
 import { Component, OnInit } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { ActivatedRoute } from "@angular/router";
+import { ActivatedRoute, RouterModule } from "@angular/router";
 import { Blog } from "../../interfaces/blog.interface";
 import { BlogService } from "../../services/blog.service";
 
 @Component({
   selector: "app-blog-detail",
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: "./blog-detail.component.html",
 })
 export class BlogDetailComponent implements OnInit {
