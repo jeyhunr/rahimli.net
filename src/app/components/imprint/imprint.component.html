@@ -1,0 +1,100 @@
+<div class="container mx-auto px-4 py-16 relative">
+  <!-- Navigation Button -->
+  <div class="mb-8">
+    <a
+      routerLink="/"
+      class="inline-flex items-center gap-2 px-6 py-3 bg-accent-green/10 text-accent-green hover:bg-accent-green/20 transition-colors duration-300 rounded-lg font-mono"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-4 h-4"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+        />
+      </svg>
+      <span>Home</span>
+    </a>
+  </div>
+
+  <!-- Content -->
+  <div class="max-w-3xl mx-auto">
+    <h1 class="text-4xl font-bold text-gray-100 mb-8 font-mono">Imprint</h1>
+
+    <div class="space-y-8 text-gray-400">
+      <!-- Contact Information -->
+      <section>
+        <h2 class="text-xl text-gray-100 mb-4 font-mono">
+          Contact Information
+        </h2>
+        <p class="font-mono">Jeyhun Rahimli</p>
+        <p class="font-mono">mail[at]rahimli.net</p>
+      </section>
+
+      <!-- External Services -->
+      <section>
+        <h2 class="text-xl text-gray-100 mb-4 font-mono">External Services</h2>
+
+        <div class="space-y-4">
+          <!-- Google Fonts -->
+          <div>
+            <h3 class="text-lg text-accent-green mb-2 font-mono">
+              Google Fonts
+            </h3>
+            <p class="font-mono">
+              This website uses Google Fonts for the JetBrains Mono typeface.
+              Google Fonts is a service provided by Google LLC.
+            </p>
+            <p class="font-mono mt-2">
+              For more information about Google's data usage, please visit:
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-accent-green hover:underline"
+              >
+                Google Privacy Policy
+              </a>
+            </p>
+          </div>
+
+          <!-- Vercel -->
+          <div>
+            <h3 class="text-lg text-accent-green mb-2 font-mono">Hosting</h3>
+            <p class="font-mono">
+              This website is hosted on Google Firebase. Firebase is a cloud
+              platform provided by Google LLC.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Privacy -->
+      <section>
+        <h2 class="text-xl text-gray-100 mb-4 font-mono">Privacy</h2>
+        <p class="font-mono">
+          This website does not collect any personal data. However, the external
+          services mentioned above may process data in accordance with their
+          respective privacy policies.
+        </p>
+      </section>
+    </div>
+  </div>
+
+  <!-- Code Background Effect -->
+  <div
+    class="absolute top-0 right-0 w-1/2 h-full opacity-5 pointer-events-none overflow-hidden"
+  >
+    <div class="relative w-full h-full">
+      <div
+        class="absolute transform -rotate-12 bg-gradient-to-br from-accent-green/20 to-transparent p-8 rounded-lg"
+      >
+        <pre class="text-xs text-gray-400">
+          <code>{{codeExample}}</code>
+        </pre>
+      </div>
+    </div>
+  </div>
+</div>
