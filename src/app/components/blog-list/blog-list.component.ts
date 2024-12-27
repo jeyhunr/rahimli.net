@@ -3,6 +3,7 @@ import { CommonModule } from "@angular/common";
 import { RouterLink } from "@angular/router";
 import { Blog } from "../../interfaces/blog.interface";
 import { BlogService } from "../../services/blog.service";
+import { map } from "rxjs";
 
 @Component({
   selector: "app-blog-list",
@@ -17,8 +18,11 @@ export class BlogListComponent implements OnInit {
   constructor(private blogService: BlogService) {}
 
   ngOnInit() {
-    this.blogService.getBlogs().subscribe((blogs) => {
-      this.blogs = blogs;
-    });
+    this.blogService
+      .getBlogs()
+      .pipe(map((x) => x.sort((a, b) => parseInt(b.id) - parseInt(a.id))))
+      .subscribe((blogs) => {
+        this.blogs = blogs;
+      });
   }
 }

@@ -60,9 +60,10 @@
     </header>
 
     <!-- Content -->
-    <div class="prose prose-invert prose-green max-w-none">
-      {{ blog.content }}
-    </div>
+    <div
+      class="prose prose-invert prose-green max-w-none"
+      [innerHTML]="blog.content"
+    ></div>
   </article>
 
   <!-- Code Background Effect -->
