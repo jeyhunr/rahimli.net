@@ -12,7 +12,20 @@ import { map } from "rxjs";
   templateUrl: "./blog-list.component.html",
 })
 export class BlogListComponent implements OnInit {
-  codeExampes = "bla bla bla";
+  codeExampes = `func (app *application) run(mux *chi.Mux) error {
+
+	srv := &http.Server{
+		Addr:         app.config.addr,
+		Handler:      mux,
+		WriteTimeout: time.Second * 30,
+		ReadTimeout:  time.Second * 10,
+		IdleTimeout:  time.Minute,
+	}
+
+	log.Printf("Starting server on %s...\n", app.config.addr)
+
+	return srv.ListenAndServe()
+}`;
   blogs: Blog[] = [];
 
   constructor(private blogService: BlogService) {}
